@@ -21,10 +21,12 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin',
+        title: 'JATE',
       }),
 
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({
+        filename: '[name].bundle.css'
+      }),
 
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -59,6 +61,9 @@ module.exports = () => {
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
+          generator: {
+            filename: 'icons/[name][ext]',
+          },
         },
         {
           test: /\.m?js$/,
