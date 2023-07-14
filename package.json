@@ -1,8 +1,11 @@
 {
   "name": "19-jate",
   "version": "1.0.0",
-  "description": "",
+  "description": "a downloadable text editor",
   "main": "server.js",
+  "engines": {
+    "node": "16.15.0"
+  },
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
     "start": "npm run build && cd server && node server.js",
