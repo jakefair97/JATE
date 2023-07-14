@@ -4,7 +4,8 @@
   "description": "a downloadable text editor",
   "main": "server.js",
   "engines": {
-    "node": "16.15.0"
+    "node": "16.15.0",
+    "npm": "8.5.5"
   },
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
-    "nodemon": "^1.14.9"
+    "nodemon": "^1.14.9",
+    "webpack-cli": "^5.1.4"
   }
 }
