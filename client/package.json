@@ -18,8 +18,8 @@
     "html-webpack-plugin": "^5.5.0",
     "http-server": "^14.1.1",
     "style-loader": "^3.2.1",
-    "webpack": "^5.88.1",
-    "webpack-cli": "^4.10.0",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.0.0",
     "webpack-pwa-manifest": "^4.0.0",
     "workbox-webpack-plugin": "^6.2.4"
